@@ -43,7 +43,7 @@ function uploadJsonToOneDrive($accessToken, $jsonFilePath, $fileName, $driveId, 
         "Authorization: Bearer $accessToken",
         "Content-Type: application/json"
     ];
-    
+     
     $ch = curl_init($url);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
