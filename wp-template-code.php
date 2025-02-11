@@ -4,7 +4,7 @@
     $access_token = "";
 	//echo dirname(__FILE__).'/onedrive-access-token.txt';
     $fh = fopen(dirname(__FILE__).'/onedrive-access-token.txt','r');
-    while ($line = fgets($fh)) {
+    while ($line = fgets($fh)) { 
       $data_r = $line;
       $data = json_decode($data_r, TRUE);
       $access_token = $data['access_token'];
